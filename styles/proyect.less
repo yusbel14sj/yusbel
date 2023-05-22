@@ -1,0 +1,36 @@
+.proyects{
+    width: 80vw;
+    margin: 10rem auto;
+    &-list {
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr ;
+        &__item {
+
+            .landy-page {
+                border-radius: 2rem;
+                background-color: #d9e2e9;
+                
+                img {
+                    width: 100%;
+                    border-radius:  2rem   2rem 0 0 ;
+                    
+                }
+                h1 {
+                    font-size: 2rem;
+                    padding: 1rem 2rem ;
+                    color: @color-wite;
+                }
+                p {
+                    font-size: 1.5rem;
+                    color: @color-wite;
+                    padding: 0 2rem 3rem 2rem 
+                };
+            }
+        }
+        &__item:hover{
+            opacity: .6;
+            transition: .2s linear;
+        }
+
+    }
+}
