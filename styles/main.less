@@ -1,0 +1,35 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    padding: 8rem 10rem;
+    box-sizing: border-box;
+    background: linear-gradient(@color-blueCould , @color-blueDarck,);
+    &-img {
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        right: 0;
+        opacity: .35;
+        img {
+            width:450px;
+            height: 350px;
+        }
+    }
+    &-article {
+        width: 75%;
+        position: absolute;
+        z-index: 10;
+    
+        & h1 {
+            font-size: 4rem;
+            color: @color-letter;
+        }
+        & p {
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size:2rem;
+            color: @color-letter;
+            font-weight: lighter;
+        }
+    }
+}

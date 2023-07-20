@@ -1,54 +1,52 @@
 .header {
-    background-color: @color-dark-header;
-    padding:1.8rem 10vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    &-logo {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 3rem;
-        color:@color-wite;
-        font-weight:500;
-        text-transform: uppercase;
-    }
-    .navbar{
-        button{
-            display: none;
+    position: fixed;
+    width: 100vw;
+    &-logo{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 8rem;
+        width: 100vw;
+        height:15vh;
+        background: linear-gradient(@color-blueDarck,#1f3f4100);
+        & img{
+            height: 2rem;
         }
-        .contend-nav {
+        & p {
+            font-size:2rem;
+            font-weight:400;
+            color: @color-letter;
+        }
+
+    }
+    .navbar {
+        position: fixed;
+        top: 23vh;
+        border-radius:0 5px 5px 0 ;
+        background-color: @color-lila;
+        padding: 8px 0 8px 8px;
+        & ul {
+            height: 15rem;
             list-style: none;
-            display: flex;
-            gap:3rem;
-            .nav-item {
-                a{
-                    text-decoration: none;
-                    font-size: 1.8rem;
-                    color: @color-wite;
+            border-left: solid 2px @color-letter ;
+
+            & .navbar-item {
+                & a{
+                    display: flex;
+                    height: 5rem;
+                    width: 5rem;
+                    justify-content: center;
+                    align-items: center;
                 }
             }
-        }
-    }
-}/*
-@media (max-widht:550px) {
-    .header {
-        .navbar{
-            button{
-                display:block;
 
-            }
-
-            .contend-nav {
-                list-style: none;
-                display: none;
-                gap:3rem;
-                .nav-item {
-                    a{
-                        text-decoration: none;
-                        font-size: 1.5rem;
-                        color: @color-wite;
-                    }
-                }
+            & .navbar-item:hover{
+                background-color: #4c577d;
             }
         }
-    }
-}*/
+        & img{
+            width: 2rem;
+            height: 2rem;
+            }
+
+        }
+}

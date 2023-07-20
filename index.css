@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+html {
+  font-size: 62% ;
+}
+.header {
+  position: fixed;
+  width: 100vw;
+}
+.header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 8rem;
+  width: 100vw;
+  height: 15vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#214649), to(#1f3f4100));
+  background: linear-gradient(#214649, #1f3f4100);
+}
+.header-logo img {
+  height: 2rem;
+}
+.header-logo p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #DAE8EA;
+}
+.header .navbar {
+  position: fixed;
+  top: 23vh;
+  border-radius: 0 5px 5px 0 ;
+  background-color: #66739E;
+  padding: 8px 0 8px 8px;
+}
+.header .navbar ul {
+  height: 15rem;
+  list-style: none;
+  border-left: solid 2px #DAE8EA;
+}
+.header .navbar ul .navbar-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 5rem;
+  width: 5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .navbar ul .navbar-item:hover {
+  background-color: #4c577d;
+}
+.header .navbar img {
+  width: 2rem;
+  height: 2rem;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  padding: 8rem 10rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: -webkit-gradient(linear, left top, left bottom, from(#256367), to(#214649));
+  background: linear-gradient(#256367, #214649);
+}
+.main-img {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  opacity: 0.35;
+}
+.main-img img {
+  width: 450px;
+  height: 350px;
+}
+.main-article {
+  width: 75%;
+  position: absolute;
+  z-index: 10;
+}
+.main-article h1 {
+  font-size: 4rem;
+  color: #DAE8EA;
+}
+.main-article p {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 2rem;
+  color: #DAE8EA;
+  font-weight: lighter;
+}

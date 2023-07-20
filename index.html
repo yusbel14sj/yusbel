@@ -4,57 +4,40 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device, initial-sacale=1"/>
     <title>nevyn</title>
-    <link rel="icon" type="imgen/png" href="assets/icon/icon.png"/>
-    <link rel="stylesheet" href="styles/index.css"/>
+    <link rel="icon" type="imgen/png" href="assets/icon/scala.png"/>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
   </head>
   <body>
-    <header class="header"> <a class="header-logo">nevyn </a>
+    <header class="header">
+      <div class="header-logo"> <img src="/assets/icon/scala.png" alt="logo tornado.icon"/>
+        <p>nevyn </p>
+      </div>
       <nav class="navbar"> 
-        <button class="nav-btn"><img src="assets/icon/menu.svg" alt=""/></button>
-        <ul class="contend-nav">
-          <li class="nav-item"> <a href="#">Proyecto Hobie </a></li>
-          <li class="nav-item"> <a href="#">Contacto</a></li>
-          <li class="nav-item"> <a href="#">Proyectos</a></li>
+        <ul> 
+          <li class="navbar-item"><a href="#about-me"> <img src="/assets/icon/usuario.png" alt="icon aboutme"/></a></li>
+          <li class="navbar-item"><a href="#proyect"> <img src="/assets/icon/carpeta.png" alt="icon proyects"/></a></li>
+          <li class="navbar-item"><a href="#contact"> <img src="/assets/icon/sobre.png" alt="icon conctact"/></a></li>
         </ul>
       </nav>
     </header>
-    <main class="about-me">
-      <aside class="perfile"><img class="perfile-img" src="assets/img/yusbel.jpg" alt="Nevyn"/>
-        <h1 class="perfile-name">Nevyn</h1>
-        <ul class="network">
-          <li class="network-item"> <a href="https://gist.github.com/yusbel14sj"> <img src="assets/icon/Git-Hub.png" alt=""/>
-              <p>Git-Hub </p></a></li>
-          <li class="network-item"> <a href="https://www.linkedin.com/in/yusbel-sj-74450220b/"> <img src="assets/icon/Linkedin.png" alt=""/>
-              <p>linkedin </p></a></li>
-          <li class="network-item"><a href="https://www.facebook.com/yusbel.sj.1"> <img src="assets/icon/Facebook.png" alt=""/>
-              <p>facebook </p></a></li>
-          <li class="network-item"> <a href="#"> <img src="assets/icon/gmail.png" alt=""/>
-              <p>yusbel14sj@gmail.com   </p></a></li>
-        </ul>
-      </aside>
-      <div class="description"> 
-        <h1>Hey, Welcome </h1>
-        <p>hola, me llamo yusbel naci en perú, huanuco, tengo 21 años llevo practicando desarrollo web 4 años, lo que fue solo un juego hoy se combierte en algo mas. Aun que me encante pasar horas en la computadora me gusta mas oir la lluvia mientras lo hago.</p>
-        <p>¿tambien te gusta la lluvia?. </p>
+    <section class="main">
+      <article class="main-article"> 
+        <h1>HEY, WELLCOME</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In tempore quae voluptas velit accusamus asperiores molestiae fuga excepturi accusantium consectetur numquam perferendis error nemo architecto, assumenda eaque vero molestias. Nostrum.e</p>
+      </article>
+      <div class="main-img"><img src="/assets/img/yusbelimg.png" alt=""/></div>
+    </section>
+    <section class="proyect"> 
+      <h2>PROYECTOS</h2>
+      <div class="proyect-carrusel"> 
+        <aside class="proyect-item batatabit"><img src="/assets/img/landypage.jpg" alt=""/>
+          <h3>Batata-bit</h3>
+          <p>this is my first proyect, ultimos combios fueron agragados con nuevos componentes,</p>
+        </aside>
       </div>
-    </main>
-    <aside class="proyects"> 
-      <ul class="proyects-list"> 
-        <li class="proyects-list__item"> 
-          <aside class="landy-page"> <img src="assets/img/landypage.jpg" alt="web page"/>
-            <h1>landy page </h1>
-            <p>
-              the first proyect in git hub for frontend mentora web from sofwarfe ingenier. </p>
-          </aside>
-        </li>
-      </ul>
-    </aside>
-    <footer class="footer"> 
-      <ul class="footer-list"> 
-        <li class="footer-list-item"><a href="#">todos los derechos reserbados</a></li>
-        <li class="footer-list-item"><a href="#">by @yusbel14sj</a></li>
-        <li class="footer-list-item"><a href="#">git-hub </a></li>
-      </ul>
-    </footer>
+    </section>
   </body>
 </html>
