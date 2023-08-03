@@ -1,0 +1,66 @@
+.contact {
+background-color: @color-blueCould;
+display: flex;
+justify-content: space-around;
+padding: 8vw 10vw ;
+    .network{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.8rem;
+        &-item {
+            text-align: center;
+        }
+        &-item a {
+            color: @color-letter;
+            text-decoration: none;
+            font-weight: 100;
+        }
+    }
+    .form{
+        display: flex;
+        color: @color-blueDarck;
+        font-size: 1.2rem;
+        font-weight: 100;
+        flex-direction: column;
+        background: @color-white;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 0 40px 10px @color-blueDarck;
+        & input {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            border: none;
+            padding:0.3rem .5rem;
+        }
+        & label {
+            font-size: 1.1rem;
+        }
+        & .message{
+            resize: none;
+            border-radius: 5px;
+            padding: .5rem;
+            margin-bottom: 2rem;
+        }
+        & .message:focus-visible{
+            outline: none;
+        }
+        & input:focus-visible{
+            outline: none;
+        }
+        & button {
+            text-align: end;
+            display: flex;
+            width: max-content;
+            padding: 0 .9rem;
+            border-radius: 10px;
+            border:1px solid @color-blueCould;
+            margin: 0 0 0 auto;
+        }
+        & button:hover {
+            background-color: @color-blueCould;
+            color: @color-letter;
+        }
+    }
+}

@@ -17,27 +17,52 @@
       </div>
       <nav class="navbar"> 
         <ul> 
-          <li class="navbar-item"><a href="#about-me"> <img src="/assets/icon/usuario.png" alt="icon aboutme"/></a></li>
+          <li class="navbar-item"><a href="#aboutMe"> <img src="/assets/icon/usuario.png" alt="icon aboutme"/></a></li>
           <li class="navbar-item"><a href="#proyect"> <img src="/assets/icon/carpeta.png" alt="icon proyects"/></a></li>
           <li class="navbar-item"><a href="#contact"> <img src="/assets/icon/sobre.png" alt="icon conctact"/></a></li>
         </ul>
       </nav>
     </header>
-    <section class="main">
+    <section class="main" id="aboutMe">
       <article class="main-article"> 
-        <h1>HEY, WELLCOME</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In tempore quae voluptas velit accusamus asperiores molestiae fuga excepturi accusantium consectetur numquam perferendis error nemo architecto, assumenda eaque vero molestias. Nostrum.e</p>
+        <h1>HEY, BIENVENIDO</h1>
+        <p>hola me llamo Yusbel, con una terible curiosidad descubri mi intensa facinacion sobre la tecnologuia me encanta compartir siempre que puede mis mis conocimiento y habilidades a todo el mundo. </p>
+        <p>Hoy mas que todo la tecnologuia nos rodea alli por donde vemos, dentro de eso vi mi oportunindad de aprender crear y mejorar las herramientas de la actualidad.</p>
       </article>
       <div class="main-img"><img src="/assets/img/yusbelimg.png" alt=""/></div>
     </section>
-    <section class="proyect"> 
+    <section class="proyect" id="proyect">
       <h2>PROYECTOS</h2>
       <div class="proyect-carrusel"> 
-        <aside class="proyect-item batatabit"><img src="/assets/img/landypage.jpg" alt=""/>
+        <aside class="proyect-carrusel-item batatabit"><a href="/proyectos/batatabit/index.html"></a><img src="/assets/img/landypage.jpg" alt=""/>
           <h3>Batata-bit</h3>
           <p>this is my first proyect, ultimos combios fueron agragados con nuevos componentes,</p>
         </aside>
       </div>
     </section>
+    <section class="contact" id="contact">
+      <ul class="network">
+        <li class="network-item"> <a href="https://gist.github.com/yusbel14sj"> <img src="assets/icon/Git-Hub.png" alt=""/>
+            <p>Git-Hub </p></a></li>
+        <li class="network-item"> <a href="https://www.linkedin.com/in/yusbel-sj-74450220b/"> <img src="assets/icon/Linkedin.png" alt=""/>
+            <p>linkedin </p></a></li>
+        <li class="network-item"><a href="https://www.facebook.com/yusbel.sj.1"> <img src="assets/icon/Facebook.png" alt=""/>
+            <p>facebook </p></a></li>
+        <li class="network-item"> <a href="#"> <img src="assets/icon/gmail.png" alt=""/>
+            <p>yusbel14sj@gmail.com  </p></a></li>
+      </ul>
+      <form class="form" action="#"> 
+        <label for="name">escribe tu nombre</label>
+        <input type="text" placeholder="zandalio" id="name"/>
+        <label for="coreo">escribr tu correo electronico</label>
+        <input type="text" name="correo" placeholder="exsample@gmail.com" id="coreo"/>
+        <label for="message"> cual es tu mensage?</label>
+        <textarea class="message" name="message" cols="auto" rows="5" id="menssage">    </textarea>
+        <button type="">enviar </button>
+      </form>
+    </section>
+    <footer class="footer"> 
+      <div class="footer-description"><span>todos los derechos reservados </span><span>desarrollador por @yusbel</span></div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,53 @@
+.proyect {
+    position:inherit;
+    z-index: 10;
+    width: 80vw;
+    margin:50px auto;
+    
+    h2 {
+        font-size: 2rem;
+        color: @color-blueCould;
+        font-weight:normal;
+    }
+    &-carrusel {
+        display: flex;
+        overscroll-behavior-x: contain;
+        /*overflow-x: scroll;
+        scroll-snap-type: x proximity;*/
+        margin: 30px 0;
+
+        &-item {
+            position:relative;
+            opacity: .7;
+            width: 150px;
+            border-radius: 9px;
+            background: @color-white;
+            box-shadow: 0px 5px 25px @color-blueDarck;
+            a {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            & img{
+                width: 150px;
+                border-radius: 9px 9px 0 0;
+            }
+            & h3 {
+                font-size: 1.6rem;
+                text-transform: uppercase;
+                margin: 1rem 1.5rem 0  ;
+                line-height: 1;
+            }
+            & p {
+                font-size: 1.2rem;
+                margin: 0 1.5rem 1rem;
+                font-weight:lighter;
+                line-height: 1;
+
+            }
+        }
+        &-item:hover {
+            opacity: 1;
+        }
+    }
+}
